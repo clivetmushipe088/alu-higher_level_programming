@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "C is fun! " | awk '{printf "%-10s\n", $0}'
+print ("C is fun! ")
