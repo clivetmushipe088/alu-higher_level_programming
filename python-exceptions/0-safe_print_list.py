@@ -3,7 +3,7 @@ def safe_print_list(my_list=[], x=0):
     count = 0
     printed_elements = 0
     
-    # Determine the number of elements in my_list without using len()
+    # Determine the number of elements in my_list
     try:
         for _ in my_list:
             count += 1
