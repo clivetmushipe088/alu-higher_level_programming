@@ -1,26 +1,26 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
-    count = 0
-    printed_elements = 0
+    count = 0  # To count the number of elements in my_list
+    printed_elements = 0  # To count how many elements are actually printed
 
+    # Count the number of elements in my_list without using len()
     try:
-        # Attempt to count the elements in my_list without using len()
         for _ in my_list:
             count += 1
     except TypeError:
-        # If my_list is not iterable (which should not happen here due to default value), return 0
+        # If my_list is not iterable, return 0 (this case is unlikely with the default value)
         return 0
-    
-    try:
-        # Print up to x elements
-        for i in range(x):
+
+    # Attempt to print up to x elements from my_list
+    for i in range(x):
+        try:
             print(my_list[i], end=' ')
             printed_elements += 1
-    except IndexError:
-        # IndexError will be caught if x is greater than the number of elements in my_list
-        pass
-    
-    print()  # To move to the next line after printing all elements
+        except IndexError:
+            # If x is greater than the number of elements, stop printing
+            break
+
+    print()  # Move to a new line after printing
     return printed_elements
 
 # Example usage:
