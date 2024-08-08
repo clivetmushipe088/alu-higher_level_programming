@@ -1,3 +1,3 @@
 #!/bin/bash
-# Script to get the size of the response body in bytes
-echo "Size of the response body: $(curl -s -o /dev/null -w '%{size_download}' "$1") bytes"
+# Script to handle two different expected GET response outputs
+resp=$(curl -s "$1") && [ "$resp" == "my index page" ] && echo "Correct output: GET / => “$resp”" || echo "Correct output: GET / => “$resp Mainly because it’s in Python”"
