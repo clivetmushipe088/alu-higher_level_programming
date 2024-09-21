@@ -1,4 +1,4 @@
-// Sure, here's a simple JavaScript script that accomplishes your request:
+#!/usr/bin/node
 const myVar = "JavaScript is amazing";
 console.log(myVar);
 
