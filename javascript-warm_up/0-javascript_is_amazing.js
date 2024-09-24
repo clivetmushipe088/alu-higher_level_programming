@@ -2,5 +2,6 @@
 // Create a constant variable
 const myVar = "JavaScript is amazing";
 
-// Print the value of the constant
-console.log(myVar);
+// Print the value o:f the constant
+console.log(myVar)i;
+
