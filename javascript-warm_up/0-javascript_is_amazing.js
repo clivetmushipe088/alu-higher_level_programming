@@ -1,7 +1,4 @@
-#!/usr/bin/node
-// Create a constant variable
+#!/usr/bin/env node
 const myVar = "JavaScript is amazing";
-
-// Print the value o:f the constant
-console.log(myVar)i;
+console.log(myVar);
 
